@@ -1,0 +1,154 @@
+
+
+/* Global styles */
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dda0dd;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.1);
+}
+
+.nav__logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav__list {
+  display: inline-flex;
+  column-gap: 3rem;
+  list-style: none;
+}
+
+.nav__items {
+  margin: 0 15px; /* This will apply for all screen sizes initially */
+}
+
+.nav__items i,
+a {
+  font-size: 1.3rem;
+  color: #e6e6fa; /* Review this color for accessibility against the background */
+}
+
+.nav__link,
+i:hover {
+  transition: all 0.4s;
+  color: #f34079; /* Review this color for accessibility against the background */
+}
+
+.nav__items span {
+  display: none;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+button {
+  background-color: #db87db;
+  color: rgb(102, 102, 102); /* Review this color for accessibility */
+  font-weight: bold;
+  padding: 13px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  border: none;
+}
+
+button:hover {
+  transition: all 0.4s;
+  background-color: #f34079; /* Review this color for accessibility */
+  box-shadow: 2px 2px 5px white;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive styles for screens larger than 1150px */
+@media only screen and (min-width: 1151px) {
+  .nav__items {
+    margin: 0 30px; /* Increased margin for larger screens */
+  }
+
+  #element {
+    font-size: 3.5rem;
+    align-items: center;
+    color: rgb(88, 0, 88);
+    margin: 50px 0; /* Added 0 to the missing margin property */
+    margin-top: 50px;
+  }
+
+  .main p {
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+  }
+  .main span {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ex{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+  }
+}
+
+/* Styles for screens up to 1150px */
+@media only screen and (max-width: 1150px) {
+  .nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 -8px 32px hsla(0, 0%, 0%, 0.1);
+    padding: 1.25rem 4rem;
+    transition: background-color 0.4s;
+  }
+
+  #element {
+    font-size: 3rem;
+    align-items: center;
+    color: rgb(88, 0, 88);
+    margin: 50px 0; /* Added 0 to the missing margin property */
+    margin-top: 50px;
+  }
+
+  .main p {
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+  }
+
+  .ex{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+  }
+}
