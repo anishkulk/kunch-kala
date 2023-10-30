@@ -112,6 +112,10 @@ button:hover {
     padding: auto;
     margin: auto;
   }
+
+  #sp{
+    padding-bottom: 5rem;
+  }
 }
 
 /* Styles for screens up to 1150px */
